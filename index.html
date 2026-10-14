@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="te" data-lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sri Lakshmi Ganapathi Engineering Works | Container Houses, Glass Railings & Welding Works</title>
+  <meta name="description" content="Sri Lakshmi Ganapathi Engineering Works - Premier Fabricators of Container Houses, Frameless Glass Railings, CNC Designer Gates, SS Railings, Safety Grills & Industrial Welding. Serving Andhra Pradesh, Telangana & across India. Contact: 9912453563.">
+  <meta name="keywords" content="Container houses Andhra Pradesh, Glass railings Kakinada, CNC gates welding works, Sri Lakshmi Ganapathi Engineering Works, Telugu welding fabrication, prefabricated container homes">
+  
+  <!-- Favicon / Meta -->
+  <meta name="theme-color" content="#0e2442">
+
+  <!-- Google Fonts: Inter & Outfit & Noto Sans Telugu -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Noto+Sans+Telugu:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons for fast, crystal-clear iconography -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-info">
+        <span><i class="fa-solid fa-location-dot"></i> <span data-i18n="location_short">East Godavari, Andhra Pradesh | 17°00'58.4"N 82°16'03.7"E</span></span>
+        <span class="divider">|</span>
+        <span><i class="fa-solid fa-clock"></i> <span data-i18n="work_hours">Mon - Sat: 8:00 AM - 8:30 PM</span></span>
+      </div>
+      <div class="top-actions">
+        <!-- Language Switcher Toggle -->
+        <div class="lang-switcher" title="భాషను మార్చండి / Change Language">
+          <button id="langToggleBtn" class="lang-btn" onclick="toggleLanguage()">
+            <i class="fa-solid fa-globe"></i>
+            <span id="currentLangLabel">తెలుగు (Telugu)</span>
+          </button>
+        </div>
+        <a href="tel:+919912453563" class="phone-link"><i class="fa-solid fa-phone"></i> +91 99124 53563</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="main-header" id="navbar">
+    <div class="container header-container">
+      <a href="#home" class="brand-logo-wrapper">
+        <div class="logo-badge">
+          <!-- Official Company Logo Image -->
+          <img src="assets/logo.jpg" alt="Sri Lakshmi Ganapathi Engineering Works Logo" class="brand-logo-image">
+          <div class="brand-text-block">
+            <h1 class="brand-title">SRI LAKSHMI GANAPATHI</h1>
+            <p class="brand-sub">ENGINEERING & WELDING WORKS</p>
+            <span class="brand-telugu">శ్రీ లక్ష్మీ గణపతి ఇంజనీరింగ్ వర్క్స్</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Menu -->
+      <nav class="nav-menu" id="navMenu">
+        <a href="#home" class="nav-link active" data-i18n="nav_home">Home</a>
+        <a href="#services" class="nav-link" data-i18n="nav_products">Products & Services</a>
+        <a href="#calculator" class="nav-link" data-i18n="nav_calculator">Cost Estimator</a>
+        <a href="#gallery" class="nav-link" data-i18n="nav_gallery">Portfolio</a>
+        <a href="#why-us" class="nav-link" data-i18n="nav_why">Why Choose Us</a>
+        <a href="#contact" class="nav-link" data-i18n="nav_contact">Contact & Location</a>
+      </nav>
+
+      <!-- Quick Action CTA -->
+      <div class="header-cta-group">
+        <button class="mobile-lang-btn" id="mobileHeaderLangBtn" onclick="toggleLanguage()" title="భాషను మార్చండి / Switch Language">
+          <i class="fa-solid fa-globe"></i> <span id="mobileLangLabel">తెలుగు</span>
+        </button>
+        <a href="tel:+919912453563" class="mobile-header-call" title="Call Now">
+          <i class="fa-solid fa-phone"></i>
+        </a>
+        <a href="https://wa.me/919912453563?text=Namaste!%20I%20am%20interested%20in%20your%20Container%20House%20/%20Glass%20Railing%20/%20Welding%20works.%20Please%20share%20quotation." target="_blank" class="btn btn-whatsapp-header">
+          <i class="fa-brands fa-whatsapp"></i> <span data-i18n="btn_whatsapp">WhatsApp Quote</span>
+        </a>
+        <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Toggle Menu" onclick="toggleMobileMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="mobile-drawer-header">
+      <div class="mobile-logo-wrap" style="display:flex;align-items:center;gap:0.6rem;">
+        <img src="assets/logo.jpg" alt="Logo" style="height:38px;border-radius:4px;">
+        <span class="brand-telugu">శ్రీ లక్ష్మీ గణపతి</span>
+      </div>
+      <button class="close-drawer" onclick="toggleMobileMenu()"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="mobile-nav-links">
+      <a href="#home" onclick="toggleMobileMenu()" data-i18n="nav_home">Home</a>
+      <a href="#services" onclick="toggleMobileMenu()" data-i18n="nav_products">Products & Services</a>
+      <a href="#calculator" onclick="toggleMobileMenu()" data-i18n="nav_calculator">Instant Cost Estimator</a>
+      <a href="#gallery" onclick="toggleMobileMenu()" data-i18n="nav_gallery">Photo Gallery</a>
+      <a href="#why-us" onclick="toggleMobileMenu()" data-i18n="nav_why">Why Choose Us</a>
+      <a href="#contact" onclick="toggleMobileMenu()" data-i18n="nav_contact">Contact Details</a>
+    </div>
+    <div class="mobile-drawer-cta">
+      <button class="btn btn-primary btn-block" onclick="toggleLanguage(); toggleMobileMenu();">
+        <i class="fa-solid fa-language"></i> <span data-i18n="btn_lang_switch">Change to తెలుగు</span>
+      </button>
+      <a href="tel:+919912453563" class="btn btn-call btn-block">
+        <i class="fa-solid fa-phone"></i> Call 99124 53563
+      </a>
+      <a href="https://wa.me/919912453563?text=Namaste!%20I%20am%20looking%20for%20Container%20Homes%20and%20Welding%20work." class="btn btn-whatsapp btn-block">
+        <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="home">
+    <div class="hero-overlay"></div>
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <i class="fa-solid fa-shield-halved"></i>
+          <span data-i18n="hero_badge">25+ Years of Father's Master Craftsmanship & Trust</span>
+        </div>
+        
+        <h1 class="hero-heading">
+          <span class="heading-en" data-i18n="hero_title_1">Modern Container Houses,</span><br>
+          <span class="gradient-text" data-i18n="hero_title_2">Glass Railings & Premium Gates</span>
+        </h1>
+        
+        <p class="hero-telugu-banner">
+          <i class="fa-solid fa-certificate gold-icon"></i>
+          <span data-i18n="hero_sub_telugu">ఆంధ్రప్రదేశ్ మరియు భారతదేశవ్యాప్తంగా నమ్మకమైన కంటైనర్ హోమ్స్, మోడ్రన్ గ్లాస్ రైలింగ్స్, డెకరేటివ్ గేట్స్ & సమగ్ర వెల్డింగ్ పనులు.</span>
+        </p>
+
+        <p class="hero-description" data-i18n="hero_desc">
+          Specialized in Luxury Container Homes, Toughened Glass Balcony Systems, CNC Laser-Cut Gates, Stainless Steel Railings, and Industrial Heavy Welding Fabrication. Direct manufacturer pricing with premium steel & glass.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="https://wa.me/919912453563?text=Namaste!%20I%20want%20to%20get%20a%20quotation%20for%20welding%20/%20container%20work." target="_blank" class="btn btn-primary btn-lg">
+            <i class="fa-brands fa-whatsapp"></i> <span data-i18n="hero_btn_quote">Get Instant WhatsApp Quote</span>
+          </a>
+          <a href="#calculator" class="btn btn-glass btn-lg">
+            <i class="fa-solid fa-calculator"></i> <span data-i18n="hero_btn_calc">Calculate Cost</span>
+          </a>
+          <a href="tel:+919912453563" class="btn btn-phone btn-lg">
+            <i class="fa-solid fa-phone"></i> 99124 53563
+          </a>
+        </div>
+
+        <!-- Trust Stats Badges -->
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-number">500+</div>
+            <div class="stat-label" data-i18n="stat_projects">Projects Completed</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">100%</div>
+            <div class="stat-label" data-i18n="stat_rustproof">Tata & Jindal Steel</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">25+</div>
+            <div class="stat-label" data-i18n="stat_exp">Years Father Experience</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">4.9 ★</div>
+            <div class="stat-label" data-i18n="stat_rating">Client Trust Rating</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual Showcase Card -->
+      <div class="hero-showcase">
+        <div class="showcase-card">
+          <div class="card-tag"><i class="fa-solid fa-fire-burner"></i> <span data-i18n="tag_featured">Featured Masterpiece</span></div>
+          <img src="assets/hero_container_home_1791978721093.jpg" alt="Modern Luxury Container House by Sri Lakshmi Ganapathi Engineering" class="showcase-img">
+          <div class="showcase-caption">
+            <h4 data-i18n="showcase_title">Custom Modular Container House</h4>
+            <p data-i18n="showcase_desc">2-Story Luxury Living with Rooftop Terrace & Frameless Glass Railings</p>
+            <div class="caption-badges">
+              <span><i class="fa-solid fa-check"></i> Weather Proof</span>
+              <span><i class="fa-solid fa-check"></i> Saint-Gobain Glass</span>
+              <span><i class="fa-solid fa-check"></i> Fast Delivery</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Services & Products -->
+  <section class="section-padding bg-light" id="services">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-subtitle" data-i18n="services_subtitle">OUR SPECIALIZED CRAFTSMANSHIP</span>
+        <h2 class="section-title" data-i18n="services_title">Products & Welding Fabrication Services</h2>
+        <p class="section-desc" data-i18n="services_desc">
+          Built with precision, strength, and aesthetic perfection. Every cut, weld, and polish is inspected for lifetime durability.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <!-- 1. Container Houses -->
+        <div class="service-card highlighted">
+          <div class="service-img-wrapper">
+            <img src="assets/hero_container_home_1791978721093.jpg" alt="Container Houses and Prefab Homes">
+            <span class="badge-featured" data-i18n="badge_top_product">🔥 Top Product</span>
+          </div>
+          <div class="service-body">
+            <div class="service-icon"><i class="fa-solid fa-house-chimney-window"></i></div>
+            <h3 data-i18n="svc_1_title">Container Houses & Modular Living</h3>
+            <p class="telugu-caption" data-i18n="svc_1_te">కంటైనర్ హౌస్ మరియు పోర్టబుల్ ఆఫీసులు</p>
+            <p class="service-text" data-i18n="svc_1_desc">
+              Custom-designed luxury 20ft & 40ft container homes, farmhouse cottages, site offices, cafes, and rooftop modular suites. Fully insulated, electrified, and earthquake-resistant.
+            </p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-circle-check"></i> 1 BHK / 2 BHK / Duplex container villas</li>
+              <li><i class="fa-solid fa-circle-check"></i> 100% Heat insulation & AC provisions</li>
+              <li><i class="fa-solid fa-circle-check"></i> Ready to occupy within 15 to 30 days</li>
+            </ul>
+            <div class="service-action">
+              <a href="https://wa.me/919912453563?text=Namaste!%20I%20am%20interested%20in%20Container%20Houses.%20Please%20share%20models%20and%20prices." class="btn btn-outline-primary btn-sm">
+                <i class="fa-brands fa-whatsapp"></i> <span data-i18n="btn_enquire">Enquire Now</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Glass Railings -->
+        <div class="service-card">
+          <div class="service-img-wrapper">
+            <img src="assets/glass_railing_balcony_1791978743761.jpg" alt="Toughened Glass Railings">
+          </div>
+          <div class="service-body">
+            <div class="service-icon"><i class="fa-solid fa-border-all"></i></div>
+            <h3 data-i18n="svc_2_title">Frameless Toughened Glass Railings</h3>
+            <p class="telugu-caption" data-i18n="svc_2_te">బాల్కనీ & మెట్ల గ్లాస్ రైలింగ్స్</p>
+            <p class="service-text" data-i18n="svc_2_desc">
+              Sleek modern balcony and staircase railings built with 12mm / 15mm Saint-Gobain toughened laminated glass and Jindal SS 304 / aluminum base shoe spigots.
+            </p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-circle-check"></i> Unobstructed panoramic views & safety</li>
+              <li><i class="fa-solid fa-circle-check"></i> SS 304 / SS 316 Grade rustproof brackets</li>
+              <li><i class="fa-solid fa-circle-check"></i> Custom LED channel lighting options</li>
+            </ul>
+            <div class="service-action">
+              <a href="https://wa.me/919912453563?text=Namaste!%20I%20need%20Glass%20Railings%20for%20my%20balcony/stairs.%20Please%20send%20sqft%20rates." class="btn btn-outline-primary btn-sm">
+                <i class="fa-brands fa-whatsapp"></i> <span data-i18n="btn_enquire">Enquire Now</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Gates & CNC Laser Cut -->
+        <div class="service-card">
+          <div class="service-img-wrapper">
+            <img src="assets/designer_cnc_gate_1791978764581.jpg" alt="Modern CNC Designer Gates">
+          </div>
+          <div class="service-body">
+            <div class="service-icon"><i class="fa-solid fa-door-open"></i></div>
+            <h3 data-i18n="svc_3_title">CNC Laser Cut & Modern Designer Gates</h3>
+            <p class="telugu-caption" data-i18n="svc_3_te">మోడ్రన్ డిజైనర్ గేట్స్ & స్లైడింగ్ గేట్స్</p>
+            <p class="service-text" data-i18n="svc_3_desc">
+              State-of-the-art entrance gates crafted with precision CNC sheet cutting, wrought iron accents, teak wood louvers, and motorized automated sliding systems.
+            </p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-circle-check"></i> Heavy duty hinges & smooth sliding rollers</li>
+              <li><i class="fa-solid fa-circle-check"></i> Epoxy primer + PU weather-proof coating</li>
+              <li><i class="fa-solid fa-circle-check"></i> Customized designs as per your elevation</li>
+            </ul>
+            <div class="service-action">
+              <a href="https://wa.me/919912453563?text=Namaste!%20I%20want%20to%20customize%20a%20Main%20Gate%20design.%20Please%20share%20catalog." class="btn btn-outline-primary btn-sm">
+                <i class="fa-brands fa-whatsapp"></i> <span data-i18n="btn_enquire">Enquire Now</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Stainless Steel & Balcony Railings -->
+        <div class="service-card">
+          <div class="service-body">
+            <div class="service-icon"><i class="fa-solid fa-stairs"></i></div>
+            <h3 data-i18n="svc_4_title">SS 304 Staircase & Balcony Railings</h3>
+            <p class="telugu-caption" data-i18n="svc_4_te">స్టెయిన్లెస్ స్టీల్ రైలింగ్స్</p>
+            <p class="service-text" data-i18n="svc_4_desc">
+              Mirror finish and brushed matte stainless steel pipe and square bar railings for staircases, duplex stairs, and verandahs. Guaranteed 100% Jindal SS 304 certified steel.
+            </p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-circle-check"></i> Zero rust guarantee for coastal climates</li>
+              <li><i class="fa-solid fa-circle-check"></i> Seamless argon TIG welding</li>
+            </ul>
+            <div class="service-action">
+              <a href="https://wa.me/919912453563?text=Namaste!%20Interested%20in%20SS%20Railings%20quote." class="btn btn-outline-primary btn-sm">
+                <i class="fa-brands fa-whatsapp"></i> <span data-i18n="btn_enquire">Enquire Now</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Safety Grills & Window Works -->
+        <div class="service-card">
+          <div class="service-body">
+            <div class="service-icon"><i class="fa-solid fa-shield"></i></div>
+            <h3 data-i18n="svc_5_title">Window Safety Grills & Balcony Grills</h3>
+            <p class="telugu-caption" data-i18n="svc_5_te">కిటికీ గ్రిల్స్ మరియు రక్షణ గ్రిల్స్</p>
+            <p class="service-text" data-i18n="svc_5_desc">
+              High-security MS designer window grills, heavy safety grates, decorative balcony safety enclosures, and compound wall spike safety rails.
+            </p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-circle-check"></i> Solid forged square bars & diamond patterns</li>
+              <li><i class="fa-solid fa-circle-check"></i> Robust child-safe balcony enclosures</li>
+            </ul>
+            <div class="service-action">
+              <a href="https://wa.me/919912453563?text=Namaste!%20I%20need%20Window%20Safety%20Grills%20quote." class="btn btn-outline-primary btn-sm">
+                <i class="fa-brands fa-whatsapp"></i> <span data-i18n="btn_enquire">Enquire Now</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Heavy Structural & Industrial Welding -->
+        <div class="service-card">
+          <div class="service-body">
+            <div class="service-icon"><i class="fa-solid fa-industry"></i></div>
+            <h3 data-i18n="svc_6_title">Industrial Sheds, Trusses & Welding</h3>
+            <p class="telugu-caption" data-i18n="svc_6_te">ఇండస్ట్రియల్ షెడ్స్ & సమగ్ర వెల్డింగ్ వర్క్స్</p>
+            <p class="service-text" data-i18n="svc_6_desc">
+              Factory sheds, warehouse roof trusses, polyhouse structures, rolling shutters, spiral stairs, and customized metal fabrication for commercial and residential requirements.
+            </p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-circle-check"></i> Heavy structural steel I-beam & tubular trusses</li>
+              <li><i class="fa-solid fa-circle-check"></i> On-site welding & rapid erection</li>
+            </ul>
+            <div class="service-action">
+              <a href="https://wa.me/919912453563?text=Namaste!%20I%20have%20an%20Industrial%20Shed%20/%20Heavy%20Welding%20requirement." class="btn btn-outline-primary btn-sm">
+                <i class="fa-brands fa-whatsapp"></i> <span data-i18n="btn_enquire">Enquire Now</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Cost Estimator & Quote Calculator -->
+  <section class="section-padding bg-dark text-white" id="calculator">
+    <div class="container">
+      <div class="calc-wrapper">
+        <div class="calc-info">
+          <span class="badge-gold" data-i18n="calc_badge">FREE INSTANT ESTIMATION</span>
+          <h2 data-i18n="calc_heading">Calculate Your Project Cost Instantly</h2>
+          <p class="telugu-caption-white" data-i18n="calc_te">
+            మీకు కావలసిన పనిని ఎంచుకుని సులభంగా అంచనా వ్యయాన్ని లెక్కించండి.
+          </p>
+          <p data-i18n="calc_desc">
+            Get an instant transparent estimate for your Container Home, Glass Railing, Gate, or Grill fabrication. You can directly send this estimate to our WhatsApp for the best direct factory price discount!
+          </p>
+          <div class="calc-points">
+            <div class="point-item"><i class="fa-solid fa-check-double"></i> <span data-i18n="calc_p1">No hidden charges or middlemen commissions</span></div>
+            <div class="point-item"><i class="fa-solid fa-check-double"></i> <span data-i18n="calc_p2">Genuine Tata & Jindal Steel Grade guarantee</span></div>
+            <div class="point-item"><i class="fa-solid fa-check-double"></i> <span data-i18n="calc_p3">Free site inspection in Andhra Pradesh</span></div>
+          </div>
+        </div>
+
+        <div class="calc-card">
+          <form id="quoteCalculatorForm" onsubmit="handleCalculatorSubmit(event)">
+            <!-- Service Type Selection -->
+            <div class="form-group">
+              <label for="calcService" data-i18n="lbl_select_work">Select Product / Work Type:</label>
+              <select id="calcService" class="form-control" onchange="updateCalculatorUnits()">
+                <option value="container_20">Container House - 20ft Modern Cabin (Approx 160 sq.ft)</option>
+                <option value="container_40">Container House - 40ft Luxury Villa (Approx 320 sq.ft)</option>
+                <option value="glass_railing">Toughened Glass Railings (12mm + SS 304 Spigots)</option>
+                <option value="cnc_gate">CNC Laser Cut Designer Main Gate</option>
+                <option value="ss_railing">SS 304 Stainless Steel Staircase Railing</option>
+                <option value="safety_grill">MS Safety Window & Balcony Grills</option>
+                <option value="industrial_shed">Industrial Steel Shed / Roof Truss</option>
+              </select>
+            </div>
+
+            <!-- Size / Area Input -->
+            <div class="form-row">
+              <div class="form-group col-half">
+                <label for="calcQuantity" id="calcUnitLabel" data-i18n="lbl_quantity">Quantity / Units:</label>
+                <input type="number" id="calcQuantity" class="form-control" value="1" min="1" max="10000" oninput="calculateEstimate()">
+              </div>
+              <div class="form-group col-half">
+                <label for="calcFinish" data-i18n="lbl_finish">Material / Grade:</label>
+                <select id="calcFinish" class="form-control" onchange="calculateEstimate()">
+                  <option value="premium">Premium Quality (Tata / Jindal SS 304)</option>
+                  <option value="standard">Standard Solid Grade</option>
+                  <option value="luxury">Ultra-Luxury Custom Architectural</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Estimate Display Box -->
+            <div class="estimate-result-box">
+              <div class="estimate-label" data-i18n="lbl_est_range">Approximate Estimated Investment:</div>
+              <div class="estimate-amount" id="estimateDisplay">₹ 2,45,000 - ₹ 2,90,000</div>
+              <div class="estimate-note" data-i18n="lbl_est_note">* Includes fabrication, anti-rust coating & welding masterwork. Final quote confirmed after site measurement.</div>
+            </div>
+
+            <!-- Instant WhatsApp Button -->
+            <button type="submit" class="btn btn-whatsapp btn-block btn-lg">
+              <i class="fa-brands fa-whatsapp"></i> <span data-i18n="btn_send_estimate">Send Estimate to WhatsApp for Best Discount</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Photo Gallery & Portfolio -->
+  <section class="section-padding" id="gallery">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-subtitle" data-i18n="gallery_subtitle">OUR RECENT WORKS</span>
+        <h2 class="section-title" data-i18n="gallery_title">Project Gallery & Real Work Showcase</h2>
+        <p class="section-desc" data-i18n="gallery_desc">
+          Browse through our executed projects of container living spaces, frameless glass balconies, designer main gates, and architectural steel work.
+        </p>
+
+        <!-- Filter tabs -->
+        <div class="gallery-filters">
+          <button class="filter-btn active" onclick="filterGallery('all')">All Works (అన్నీ)</button>
+          <button class="filter-btn" onclick="filterGallery('container')">Container Houses</button>
+          <button class="filter-btn" onclick="filterGallery('glass')">Glass Railings</button>
+          <button class="filter-btn" onclick="filterGallery('gates')">Designer Gates</button>
+          <button class="filter-btn" onclick="filterGallery('welding')">Welding & Fabrication</button>
+        </div>
+      </div>
+
+      <div class="gallery-grid" id="galleryGrid">
+        <!-- Item 1: Container House -->
+        <div class="gallery-item" data-category="container">
+          <div class="gallery-card">
+            <img src="assets/hero_container_home_1791978721093.jpg" alt="Modern Container Villa">
+            <div class="gallery-overlay">
+              <h4>Modern 2-Story Container Villa</h4>
+              <p>Custom fabricated with glass railings and hardwood outdoor deck</p>
+              <a href="https://wa.me/919912453563?text=Namaste!%20I%20like%20the%202-Story%20Container%20Villa%20design." class="gallery-btn"><i class="fa-brands fa-whatsapp"></i> Request Similar</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2: Glass Railing -->
+        <div class="gallery-item" data-category="glass">
+          <div class="gallery-card">
+            <img src="assets/glass_railing_balcony_1791978743761.jpg" alt="Balcony Frameless Glass Railing">
+            <div class="gallery-overlay">
+              <h4>Luxury Balcony Glass Railing</h4>
+              <p>12mm Toughened Glass with SS 304 Heavy Spigots</p>
+              <a href="https://wa.me/919912453563?text=Namaste!%20I%20want%20this%20Balcony%20Glass%20Railing%20setup." class="gallery-btn"><i class="fa-brands fa-whatsapp"></i> Request Similar</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3: CNC Gate -->
+        <div class="gallery-item" data-category="gates">
+          <div class="gallery-card">
+            <img src="assets/designer_cnc_gate_1791978764581.jpg" alt="CNC Laser Cut Designer Main Gate">
+            <div class="gallery-overlay">
+              <h4>Modern CNC Laser-Cut Sliding Gate</h4>
+              <p>Geometric steel mesh, teak louvers & PU anti-rust finish</p>
+              <a href="https://wa.me/919912453563?text=Namaste!%20I%20want%20the%20CNC%20Laser%20Cut%20Gate%20design." class="gallery-btn"><i class="fa-brands fa-whatsapp"></i> Request Similar</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 4: Modern Container Office -->
+        <div class="gallery-item" data-category="container">
+          <div class="gallery-card">
+            <img src="assets/hero_container_home_1791978721093.jpg" alt="Prefab Portable Office">
+            <div class="gallery-overlay">
+              <h4>Prefab Portable Site Office</h4>
+              <p>Rapid deployment cabin for commercial sites & farmhouses</p>
+              <a href="https://wa.me/919912453563?text=Namaste!%20I%20am%20looking%20for%20a%20Site%20Office%20Container." class="gallery-btn"><i class="fa-brands fa-whatsapp"></i> Request Similar</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 5: Glass Railings Pool/Terrace -->
+        <div class="gallery-item" data-category="glass">
+          <div class="gallery-card">
+            <img src="assets/glass_railing_balcony_1791978743761.jpg" alt="Staircase & Balcony Glass Works">
+            <div class="gallery-overlay">
+              <h4>Staircase & Terrace Safety Glass</h4>
+              <p>Heavy duty aluminum shoe channel with continuous handrail</p>
+              <a href="https://wa.me/919912453563?text=Namaste!%20Please%20quote%20for%20Terrace%20Glass%20Railings." class="gallery-btn"><i class="fa-brands fa-whatsapp"></i> Request Similar</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 6: Wrought Iron & Welding -->
+        <div class="gallery-item" data-category="welding">
+          <div class="gallery-card">
+            <img src="assets/designer_cnc_gate_1791978764581.jpg" alt="Heavy Metal Fabrication">
+            <div class="gallery-overlay">
+              <h4>Heavy Duty Structural Welding & Sheds</h4>
+              <p>Tata Structura steel pipes, trusses, and industrial sheds</p>
+              <a href="https://wa.me/919912453563?text=Namaste!%20I%20need%20Structural%20Welding%20work." class="gallery-btn"><i class="fa-brands fa-whatsapp"></i> Request Similar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us & Father's Craftsmanship -->
+  <section class="section-padding bg-light" id="why-us">
+    <div class="container">
+      <div class="why-wrapper">
+        <div class="why-text">
+          <span class="section-subtitle" data-i18n="why_subtitle">THE CRAFTSMANSHIP ADVANTAGE</span>
+          <h2 data-i18n="why_title">Why Customers Trust Sri Lakshmi Ganapathi Works</h2>
+          <p class="telugu-highlight" data-i18n="why_te">
+            మా నాన్నగారి 25 ఏళ్ళ అనుభవం మరియు నిబద్ధత — ప్రతి పనిలోనూ ఉన్నతమైన నాణ్యత, సరైన కొలతలు మరియు మన్నికైన స్టీల్!
+          </p>
+          <p data-i18n="why_desc">
+            Unlike commercial contractors who outsource work to subcontractors, our father personally oversees every single weld, measurement, alignment, and finishing. We combine authentic traditional craftsmanship with the latest CNC laser cutting and modern container engineering.
+          </p>
+
+          <div class="why-features-list">
+            <div class="why-feature-item">
+              <div class="why-icon"><i class="fa-solid fa-gem"></i></div>
+              <div>
+                <h4 data-i18n="why_f1_title">100% Certified Brand Materials</h4>
+                <p data-i18n="why_f1_desc">We use only Tata Structura, Jindal SS 304, and Saint-Gobain 12mm Toughened glass. No low-grade imitation metals.</p>
+              </div>
+            </div>
+
+            <div class="why-feature-item">
+              <div class="why-icon"><i class="fa-solid fa-handshake"></i></div>
+              <div>
+                <h4 data-i18n="why_f2_title">Direct Workshop Price — No Middlemen</h4>
+                <p data-i18n="why_f2_desc">You deal directly with the fabrication masters, saving 20% to 30% compared to third-party interior contractors.</p>
+              </div>
+            </div>
+
+            <div class="why-feature-item">
+              <div class="why-icon"><i class="fa-solid fa-ruler-combined"></i></div>
+              <div>
+                <h4 data-i18n="why_f3_title">Exact Millimeter Precision</h4>
+                <p data-i18n="why_f3_desc">Perfect alignment for glass railings and zero-vibration sliding gates that operate effortlessly for years.</p>
+              </div>
+            </div>
+
+            <div class="why-feature-item">
+              <div class="why-icon"><i class="fa-solid fa-truck-fast"></i></div>
+              <div>
+                <h4 data-i18n="why_f4_title">All-India & Andhra Delivery</h4>
+                <p data-i18n="why_f4_desc">We manufacture container houses and modular structures that can be transported and installed anywhere in India.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="why-banner-card">
+          <div class="father-quote-card">
+            <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+            <p class="quote-text-te">
+              "వెల్డింగ్ అనేది కేవలం ఇనుమును కలపడం కాదు... అది భద్రత, అందం మరియు జీవితకాలం నిలిచే విశ్వాసం!"
+            </p>
+            <p class="quote-text-en">
+              "Welding is not just joining iron... it is building safety, beauty, and lifelong trust for your family home."
+            </p>
+            <div class="quote-author">
+              <div class="author-avatar"><i class="fa-solid fa-user-tie"></i></div>
+              <div>
+                <strong>Master Fabricator & Founder</strong>
+                <p>Sri Lakshmi Ganapathi Engineering Works</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="quality-badges-row">
+            <div class="badge-box">
+              <i class="fa-solid fa-shield-virus"></i>
+              <span>Anti-Rust Epoxy Primer</span>
+            </div>
+            <div class="badge-box">
+              <i class="fa-solid fa-cube"></i>
+              <span>ISO Grade Steel</span>
+            </div>
+            <div class="badge-box">
+              <i class="fa-solid fa-award"></i>
+              <span>10-Year Weld Integrity</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Exact Map Coordinates -->
+  <section class="section-padding" id="contact">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-subtitle" data-i18n="contact_subtitle">CONNECT WITH US</span>
+        <h2 class="section-title" data-i18n="contact_title">Visit Our Workshop or Get in Touch</h2>
+        <p class="section-desc" data-i18n="contact_desc">
+          Ready to discuss your Container House, Glass Railings, or Gate fabrication? Call us directly or visit our workshop.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Cards -->
+        <div class="contact-cards">
+          <!-- Card 1: Phone -->
+          <div class="info-card">
+            <div class="info-icon"><i class="fa-solid fa-phone-volume"></i></div>
+            <div class="info-details">
+              <h4 data-i18n="cnt_phone_title">Direct Call / WhatsApp</h4>
+              <p class="phone-highlight"><a href="tel:+919912453563">+91 99124 53563</a></p>
+              <p class="sub-text" data-i18n="cnt_phone_sub">Available 7 days a week for immediate quotations</p>
+              <a href="tel:+919912453563" class="btn btn-call btn-sm"><i class="fa-solid fa-phone"></i> Call Now</a>
+              <a href="https://wa.me/919912453563?text=Namaste!%20I%20am%20calling%20from%20your%20website%20regarding%20fabrication%20work." class="btn btn-whatsapp btn-sm"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+            </div>
+          </div>
+
+          <!-- Card 2: Coordinates & Location -->
+          <div class="info-card">
+            <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="info-details">
+              <h4 data-i18n="cnt_loc_title">Workshop Exact Location</h4>
+              <p class="coords-text"><strong>Coordinates:</strong> 17°00'58.4"N 82°16'03.7"E</p>
+              <p class="decimal-text">(17.016222, 82.267694)</p>
+              <p class="sub-text">East Godavari District, Andhra Pradesh, India</p>
+              <div class="directions-btn-group">
+                <a href="https://www.google.com/maps/dir/?api=1&destination=17.016222,82.267694" target="_blank" class="btn btn-outline-primary btn-sm">
+                  <i class="fa-solid fa-diamond-turn-right"></i> <span data-i18n="btn_get_directions">Get Google Map Directions</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Service Coverage -->
+          <div class="info-card">
+            <div class="info-icon"><i class="fa-solid fa-truck-ramp-box"></i></div>
+            <div class="info-details">
+              <h4 data-i18n="cnt_coverage_title">Service Areas</h4>
+              <p class="coverage-tags">
+                <span class="tag">Kakinada</span>
+                <span class="tag">Rajahmundry</span>
+                <span class="tag">Visakhapatnam</span>
+                <span class="tag">Vijayawada</span>
+                <span class="tag">Guntur</span>
+                <span class="tag">Hyderabad</span>
+                <span class="tag">All Across India (Container Homes)</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Google Map & Interactive Route -->
+        <div class="map-card-wrapper">
+          <div class="map-header">
+            <div>
+              <i class="fa-solid fa-map-location-dot"></i> <strong>Sri Lakshmi Ganapathi Engineering Workshop Location</strong>
+            </div>
+            <span class="live-pin-pulse">● Live GPS Pin</span>
+          </div>
+          <!-- Embedded Google Map targeting 17.016222, 82.267694 -->
+          <div class="map-frame-container">
+            <iframe 
+              title="Sri Lakshmi Ganapathi Engineering Works Location"
+              src="https://maps.google.com/maps?q=17.016222,82.267694&hl=en&z=15&output=embed" 
+              width="100%" 
+              height="380" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+          <div class="map-footer">
+            <p><i class="fa-solid fa-compass"></i> GPS: <strong>17°00'58.4"N 82°16'03.7"E</strong> (Kakinada / East Godavari, AP)</p>
+            <a href="https://maps.google.com/?q=17.016222,82.267694" target="_blank" class="btn btn-primary btn-sm">
+              <i class="fa-solid fa-up-right-from-square"></i> Open in Google Maps App
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Enquiry & Callback Form -->
+  <section class="section-padding bg-light" id="enquiry">
+    <div class="container">
+      <div class="enquiry-card">
+        <div class="enquiry-header text-center">
+          <h3 data-i18n="enquiry_title">Request a Free Measurement & Site Visit</h3>
+          <p data-i18n="enquiry_desc">Fill this quick 30-second form or message us. Our team will contact you within 15 minutes.</p>
+        </div>
+
+        <form class="enquiry-form" onsubmit="handleEnquiryForm(event)">
+          <div class="form-row">
+            <div class="form-group col-half">
+              <label for="clientName" data-i18n="lbl_your_name">Your Name (మీ పేరు): *</label>
+              <input type="text" id="clientName" class="form-control" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group col-half">
+              <label for="clientPhone" data-i18n="lbl_your_phone">Phone Number (ఫోన్ నెంబర్): *</label>
+              <input type="tel" id="clientPhone" class="form-control" placeholder="e.g. 9912453563" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-half">
+              <label for="clientService" data-i18n="lbl_req_service">Service Needed (కావలసిన పని): *</label>
+              <select id="clientService" class="form-control" required>
+                <option value="Container House">Container House (కంటైనర్ హౌస్)</option>
+                <option value="Glass Railings">Glass Railings for Balcony/Stairs (గ్లాస్ రైలింగ్స్)</option>
+                <option value="CNC Designer Gate">CNC Laser Cut Designer Gate (డిజైనర్ గేట్)</option>
+                <option value="SS Railing & Grills">Stainless Steel Railings (SS రైలింగ్స్)</option>
+                <option value="Safety Window Grills">Safety Window / Balcony Grills (గ్రిల్స్)</option>
+                <option value="Industrial Welding Shed">Heavy Welding / Shed / Trusses (ఇండస్ట్రియల్ షెడ్)</option>
+                <option value="Other Custom Metal Works">Other Custom Welding Work (ఇతర వెల్డింగ్ పనులు)</option>
+              </select>
+            </div>
+            <div class="form-group col-half">
+              <label for="clientLocation" data-i18n="lbl_your_city">Your Town / City (మీ ఊరు):</label>
+              <input type="text" id="clientLocation" class="form-control" placeholder="e.g. Kakinada, Rajahmundry, Vizag, Vijayawada">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="clientMsg" data-i18n="lbl_message">Work Details / Approximate Size (కొలతలు / వివరాలు):</label>
+            <textarea id="clientMsg" class="form-control" rows="3" placeholder="Tell us about the length, height, or design you have in mind..."></textarea>
+          </div>
+
+          <div class="text-center form-submit-row">
+            <button type="submit" class="btn btn-whatsapp btn-lg">
+              <i class="fa-brands fa-whatsapp"></i> <span data-i18n="btn_submit_enquiry">Submit & Chat on WhatsApp Immediately</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sticky Mobile Action Footer Bar -->
+  <div class="mobile-sticky-bar">
+    <a href="tel:+919912453563" class="sticky-action-btn call-action">
+      <i class="fa-solid fa-phone"></i>
+      <span>Call Now<br><b>99124 53563</b></span>
+    </a>
+    <a href="https://wa.me/919912453563?text=Namaste!%20I%20want%20to%20discuss%20a%20Container%20House%20/%20Welding%20project." target="_blank" class="sticky-action-btn wa-action">
+      <i class="fa-brands fa-whatsapp"></i>
+      <span>WhatsApp<br><b>Instant Quote</b></span>
+    </a>
+    <a href="#calculator" class="sticky-action-btn calc-action">
+      <i class="fa-solid fa-calculator"></i>
+      <span>Cost<br><b>Calculator</b></span>
+    </a>
+  </div>
+
+  <!-- Main Footer -->
+  <footer class="main-footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <img src="assets/logo.jpg" alt="Sri Lakshmi Ganapathi Engineering Works" class="footer-logo-image" style="height:65px;background:#fff;padding:4px;border-radius:8px;">
+          <div>
+            <h3>SRI LAKSHMI GANAPATHI</h3>
+            <p>ENGINEERING & WELDING WORKS</p>
+            <span class="telugu-footer-tag">శ్రీ లక్ష్మీ గణపతి ఇంజనీరింగ్ వర్క్స్</span>
+          </div>
+        </div>
+        <p class="footer-text" data-i18n="footer_bio">
+          Andhra Pradesh's dedicated manufacturer of Container Houses, Frameless Glass Railings, CNC Designer Main Gates, SS Railings, Safety Grills, and Industrial Steel Fabrication.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <h4 data-i18n="footer_prod_title">Products</h4>
+        <ul>
+          <li><a href="#services">Container Houses & Offices</a></li>
+          <li><a href="#services">Frameless Glass Railings</a></li>
+          <li><a href="#services">CNC Laser Cut Gates</a></li>
+          <li><a href="#services">SS 304 Staircase Railings</a></li>
+          <li><a href="#services">Safety Window & Balcony Grills</a></li>
+          <li><a href="#services">Industrial Roof Trusses & Sheds</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4 data-i18n="footer_contact_title">Direct Contacts</h4>
+        <p><i class="fa-solid fa-phone"></i> <strong>Call:</strong> <a href="tel:+919912453563">+91 99124 53563</a></p>
+        <p><i class="fa-brands fa-whatsapp"></i> <strong>WhatsApp:</strong> +91 99124 53563</p>
+        <p><i class="fa-solid fa-location-crosshairs"></i> <strong>GPS:</strong> 17°00'58.4"N 82°16'03.7"E</p>
+        <p><i class="fa-solid fa-map-pin"></i> East Godavari District, Andhra Pradesh, India</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom text-center">
+      <div class="container">
+        <p>© <span id="currentYear">2026</span> Sri Lakshmi Ganapathi Engineering Works. All Rights Reserved. Crafted for Father's Welding Excellence.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
